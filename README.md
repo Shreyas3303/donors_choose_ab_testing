@@ -2,9 +2,9 @@
 
 > Figuring out if making teachers write longer project descriptions actually helps get their projects approved
 
-## What's this about?
+## What is this project about?
 
-So I was looking at DonorsChoose data and noticed something interesting - projects that got approved tended to have longer descriptions than ones that got rejected. Approved projects had essays around 1,015 characters while rejected ones were only about 962 characters.
+I was looking at DonorsChoose data and noticed something interesting - projects that got approved tended to have longer descriptions than ones that got rejected. Approved projects had essays around 1,015 characters while rejected ones were only about 962 characters.
 
 This got me thinking: **what if we made teachers write longer descriptions? Would that actually help more projects get approved?**
 
@@ -12,7 +12,7 @@ That's what this A/B test is trying to figure out.
 
 ## What the project does
 
-This is basically a simulation to see what would happen if DonorsChoose required teachers to write longer project descriptions. Here's what it does:
+This is basically a simulation(since I dont have means of carrying out an actual experiment) to see what would happen if DonorsChoose required teachers to write longer project descriptions. Here's what it does:
 
 1. **Looks at the current data** - 109,248 projects, about 85% get approved
 2. **Simulates different scenarios** - what if we required 800, 1000, or 1200 character minimums?
@@ -46,21 +46,16 @@ The script will show you:
 - Charts comparing approved vs rejected projects by text length
 - How each test group performs compared to the control
 - Statistical tests to see if the differences are real or just random
-- The money impact - how much funding would be affected
-- Recommendations on what to do next
+- Business Impact
 
-## The results (spoiler alert!)
+## The results
 
-Spoiler: The results were actually surprising. Making teachers write longer descriptions actually **reduced** approval rates instead of improving them. Here's what happened:
+Spoiler: The results were actually surprising. Making teachers write longer descriptions actually **reduced** approval rates instead of improving them. Results:
 
 - **Control group**: 84.86% approval rate
 - **800 character minimum**: 82.45% approval rate (worse!)
 - **1000 character minimum**: 81.23% approval rate (even worse!)
 - **1200 character minimum**: 79.87% approval rate (much worse!)
-
-## Why this matters
-
-This is a good example of why you should test assumptions with data. Just because approved projects have longer descriptions doesn't mean requiring longer descriptions will cause more approvals. It might actually discourage teachers from submitting projects at all.
 
 ## Files in this project
 
@@ -69,21 +64,3 @@ This is a good example of why you should test assumptions with data. Just becaus
 - `donors_choose_eda.ipynb` - My original exploration of the data
 - `get_data.py` - Script to get the data
 - `donors_choose_data.csv` - The actual dataset (it's big - 126MB)
-
-## What I learned
-
-1. **Correlation ≠ Causation** - Just because approved projects have longer descriptions doesn't mean requiring longer descriptions will help
-2. **Test your assumptions** - Always run experiments before making big changes
-3. **Consider unintended consequences** - Making things harder might actually make them worse
-
-## Next steps
-
-If you want to play around with this:
-- Try different character thresholds
-- Look at different types of projects separately
-- Add other factors like school type or teacher experience
-- Run longer tests to see if the pattern holds
-
----
-
-*Made for learning about A/B testing and data science* 
