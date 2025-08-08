@@ -199,8 +199,10 @@ output/
 results/
 figures/
 plots/
-*.png
 *.jpg
 *.jpeg
 *.pdf
-*.svg 
+*.svg
+# Allow specific plot files for README
+!ab_test_results.png
+!current_patterns_analysis.png 

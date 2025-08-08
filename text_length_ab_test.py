@@ -131,6 +131,7 @@ def analyze_current_patterns(df):
     ax4.legend(['Rejected', 'Approved'])
     
     plt.tight_layout()
+    plt.savefig('current_patterns_analysis.png', dpi=300, bbox_inches='tight')
     plt.show()
     
     # Print statistics
@@ -271,6 +272,7 @@ def analyze_results(df, test_groups):
     ax4.tick_params(axis='x', rotation=45)
     
     plt.tight_layout()
+    plt.savefig('ab_test_results.png', dpi=300, bbox_inches='tight')
     plt.show()
     
     # Print detailed results
